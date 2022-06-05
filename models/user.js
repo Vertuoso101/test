@@ -9,7 +9,6 @@ const UserSchema = new mongoose.Schema({
     },
     about   : {
         type : String,
-        required : true
     },
     email : {
         type : String,
@@ -39,11 +38,9 @@ const UserSchema = new mongoose.Schema({
     },
     birthDate : {
         type : Date,
-        required : true
     },
     country : {
         type : String,
-        required : true
     },
     channelId : {
         type : String,
@@ -51,7 +48,6 @@ const UserSchema = new mongoose.Schema({
     },
     sexuality : {
         type : String,
-        required : true
     },
     following : [{type: ObjectId, ref: 'User'}],
     followers : [{type: ObjectId, ref: 'User'}],
