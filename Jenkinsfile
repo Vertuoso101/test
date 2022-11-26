@@ -5,7 +5,7 @@ pipeline {
       steps {
         echo 'Running build automation'
         sh 'test install'
-        archiveArtifacts(artifacts: 'target/*.jar', fingerprint: true)
+        archiveArtifacts(artifacts: 'webapp/target/*.war', fingerprint: true)
       }
     }
   }
