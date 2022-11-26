@@ -4,7 +4,7 @@ pipeline {
     stage ('Build') {
       steps {
         echo 'Running build automation'
-        sh 'test install'
+        sh 'clean install'
         archiveArtifacts artifacts: 'webapp.war'
       }
     }
