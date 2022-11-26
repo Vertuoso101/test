@@ -5,7 +5,7 @@ pipeline {
       steps {
         echo 'Running build automation'
         sh 'test install'
-        archiveArtifacts artifacts: 'webapp/target/*.war',
+        archiveArtifacts artifacts: 'webapp/target/webapp.war',
                    allowEmptyArchive: true,
                    fingerprint: true,
                    onlyIfSuccessful: true
