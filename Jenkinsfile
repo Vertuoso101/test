@@ -5,7 +5,7 @@ pipeline {
       steps {
         echo 'Running build automation'
         sh 'test install'
-        archiveArtifacts artifacts: 'webapp/target/webapp.war', followSymlinks: false
+        archiveArtifacts artifacts: 'test/webapp/target/webapp.war', followSymlinks: false
       }
     }
   }
